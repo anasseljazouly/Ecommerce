@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { Card, Button } from "ui";
+import { Card, Button, SliderOne } from "ui";
 import { ButtonType } from "ui";
 
 const CARD_CONTENT = [
@@ -37,6 +37,8 @@ export default function Home() {
         <div className="max-w-xl mx-auto mt-5 sm:flex sm:justify-center md:mt-8">
           <Button title="Test from web" type={ButtonType.Error} />
         </div>
+
+        <SliderOne title="React Slider" />
 
         <div className="grid grid-cols-1 gap-4 mt-12 sm:grid-cols-3 place-content-evenly">
           {CARD_CONTENT.map((card) => (
