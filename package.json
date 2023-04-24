@@ -1,5 +1,12 @@
 {
+  "name": "e-commerce",
+  "description": "E commerce website ( site and admin pannel ) using turborepo / Nextjs / shopify",
+  "version": "0.0.0",
   "private": true,
+  "workspaces":[
+    "apps/*",
+    "packages/*"
+  ],
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev",
