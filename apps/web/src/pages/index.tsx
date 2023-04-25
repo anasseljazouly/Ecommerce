@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { Card, Button, SliderOne } from "ui";
+import { Card, Button, SliderOne, PageLoader } from "ui";
 import { ButtonType } from "ui";
 
 const CARD_CONTENT = [
@@ -23,6 +23,8 @@ const CARD_CONTENT = [
 export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen py-2">
+      <PageLoader />
+
       <Head>
         <title>Web - Turborepo Example</title>
       </Head>

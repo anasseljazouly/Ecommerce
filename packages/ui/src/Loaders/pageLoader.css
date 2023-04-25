@@ -1,0 +1,122 @@
+.top-main-panel {
+  margin: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+}
+
+.bottom-main-panel {
+  margin-top: 0.5rem;
+  width: 100%;
+  height: 50%;
+}
+
+.basic-loader-card {
+  width: 80%;
+  background-color: white;
+  position: relative;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 16px;
+  padding: 2rem;
+  max-width: 1330px;
+  margin: 1rem auto;
+}
+
+.loader-card-row {
+  display: flex;
+}
+
+.loader-row {
+  border-radius: 16px;
+  padding: 2rem;
+  margin-bottom: 1rem;
+}
+
+.loader-card-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.loader-panel-container {
+  margin: 0.75rem;
+  padding: 2rem;
+  width: 80%;
+  border: 2px solid white;
+}
+
+.loader-header-container {
+  display: flex;
+  margin-bottom: 0.5rem;
+}
+
+.loader-column-container {
+  display: flex;
+}
+
+.loading-column {
+  width: 100%;
+  border-radius: 10px;
+  padding-bottom: 1rem;
+  margin-right: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+.loading-header {
+  width: 100%;
+  border-radius: 10px;
+  padding-bottom: 3rem;
+  margin-right: 0.25rem;
+}
+
+.loading {
+  background-color: #eee;
+}
+
+@keyframes shimmer {
+  0% {
+    left: -50%;
+  }
+
+  100% {
+    left: 150%;
+  }
+}
+
+.animated-background {
+  -webkit-animation: shimmer 1s infinite ease-out;
+  /* Safari 4+ */
+  -moz-animation: shimmer 1s infinite ease-out;
+  /* Fx 5+ */
+  -o-animation: shimmer 1s infinite ease-out;
+  /* Opera 12+ */
+  animation: shimmer 1s infinite ease-out;
+  background: -moz-linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 30%,
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0) 80%
+  );
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 30%,
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0) 80%
+  );
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 30%,
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0) 80%
+  );
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}

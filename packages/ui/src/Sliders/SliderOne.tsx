@@ -78,7 +78,7 @@ export const SliderOne = ({ title }: SliderOneProps) => {
 
   React.useEffect(() => {
     const interval = setInterval(() => {
-      nextArrow.current.click();
+      nextArrow?.current?.click();
     }, 7000);
     return () => {
       clearInterval(interval);
